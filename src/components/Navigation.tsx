@@ -21,9 +21,11 @@ const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-primary/10">
       <div className="container-wide flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-primary font-display font-bold text-xl tracking-tight">
-            Innovafemme
-          </span>
+          <img 
+            src="/logo.png" 
+            alt="Innovafemme Tech Solutions" 
+            className="h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop */}
