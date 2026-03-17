@@ -56,6 +56,9 @@ const About = () => {
           {/* Values */}
           <RevealSection>
             <p className="text-overline mb-4">Core Values</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mb-4">
+              The values of Innovafemme guide how we build products, work with clients, and contribute to the technology community.
+            </p>
             <h2 className="text-heading mb-16">
               What drives <span className="text-primary">everything</span> we do
             </h2>
