@@ -3,11 +3,12 @@ import RevealSection from "@/components/RevealSection";
 import { motion } from "framer-motion";
 
 const values = [
-  { name: "Innovation", description: "Pushing boundaries with every solution we build." },
-  { name: "Excellence", description: "Uncompromising quality in every line of code." },
-  { name: "Collaboration", description: "Building together with clients, partners, and communities." },
-  { name: "Integrity", description: "Transparency and honesty in all we do." },
-  { name: "Empowerment", description: "Creating pathways for underrepresented talent in tech." },
+  { name: "Innovation", description: "We continuously explore new ideas and technologies to create forward-thinking solutions that help businesses stay competitive in an evolving digital landscape." },
+  { name: "Excellence", description: "We are committed to delivering high-quality products and services by maintaining strong engineering standards, attention to detail, and a culture of continuous improvement." },
+  { name: "Empowerment", description: "We believe technology should create opportunities. Through our work and initiatives, we aim to empower businesses and individuals to reach their full potential." },
+  { name: "Collaboration", description: "We believe the best solutions are built through teamwork and strong partnerships. We work closely with clients, partners, and collaborators to achieve shared goals." },
+  { name: "Integrity", description: "We operate with transparency, accountability, and professionalism in all our engagements, ensuring trust and reliability in the relationships we build." },
+  { name: "Inclusion", description: "We are committed to promoting diversity and creating opportunities for women and underrepresented groups to grow and succeed in the technology industry." },
 ];
 
 const About = () => {
