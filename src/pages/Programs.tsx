@@ -7,7 +7,7 @@ const trainingComponents = [
   {
     icon: BookOpen,
     title: "Project-Based Learning",
-    description: "Participants work on practical technology projects that simulate real industry challenges and solutions — not theoretical coursework.",
+    description: "Participants work on practical technology projects that simulate real industry challenges and solutions not theoretical coursework.",
   },
   {
     icon: Users,
@@ -22,7 +22,7 @@ const trainingComponents = [
   {
     icon: Lightbulb,
     title: "Career Development",
-    description: "Training includes soft skills — communication, teamwork, leadership, and professional growth — to prepare participants for successful careers.",
+    description: "Training includes soft skills — communication, teamwork, leadership, negotiation and professional growth. This prepares participants for successful careers.",
   },
 ];
 
@@ -76,25 +76,87 @@ const Programs = () => {
               Transforming skills into{" "}
               <span className="text-primary">opportunity</span>
             </h1>
-            <p className="text-body text-lg max-w-3xl mb-6">
+            <p className="text-body text-lg max-w-3xl mb-4 leading-10">
               At Innovafemme Tech Solutions, we believe that technology is not only a tool for business growth but also a powerful driver of social transformation. We are committed to supporting initiatives that expand access to opportunities within the technology ecosystem.
             </p>
-            <p className="text-body text-lg max-w-3xl mb-24">
-              Across many African communities, young people — particularly women — are acquiring technical skills but often struggle to transition into professional roles due to limited access to mentorship, real-world projects, and industry exposure. Innovafemme seeks to bridge this gap by creating structured pathways that connect learning with practical experience.
+            <p className="text-body text-lg max-w-3xl mb-4 leading-10">
+              Through our programs and initiatives, we aim to equip aspiring technology professionals with hands-on exposure, mentorship, and opportunities to participate in real-world projects that build both competence and confidence.
             </p>
           </RevealSection>
         </div>
       </section>
 
+      {/* Skilled But Stuck */}
+      <section className="section-padding-sm bg-card">
+        <div className="container-wide">
+          <RevealSection>
+            <div className="border border-primary/10 p-10 md:p-16 mb-16">
+              <span className="font-mono text-xs text-primary block mb-6">FLAGSHIP PROGRAM</span>
+              <h2 className="text-heading mb-6">The <span className="text-primary"> Skilled But Stuck </span> Program</h2>
+              <p className="text-body text-lg max-w-3xl mb-6 leading-10">
+                Across Africa, many young women successfully complete technical training programs but face significant challenges entering the workforce. Despite possessing foundational skills, they often struggle to transition into professional roles due to limited access to mentorship, real-world projects and industry exposure.
+              </p>
+              <p className="text-body text-lg max-w-3xl leading-10">
+                The Skilled But Stuck Program is designed to address this challenge by creating a bridge between technical training and real industry experience. Through this program, Innovafemme connects skilled young women with real technology projects, allowing them to apply their knowledge, gain confidence, and build portfolios that demonstrate their capabilities.
+              </p>
+            </div>
+          </RevealSection>
+
+          {/* Process */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 mb-10">
+            {trainingComponents.map((item, i) => (
+              <RevealSection key={item.title} delay={i * 0.06}>
+                <div className={`p-8 h-full ${i > 0 ? "md:border-l border-primary/10" : ""}`}>
+                  <item.icon className="text-primary mb-4" size={28} />
+                  <h3 className="text-lg font-bold font-display mb-2">{item.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-6">{item.description}</p>
+                </div>
+              </RevealSection>
+            ))}
+          </div>
+
+          {/* What participants gain */}
+          <RevealSection>
+            <div className="grid md:grid-cols-2 gap-16 mb-16">
+              <div>
+                <span className="font-mono text-xs text-primary block mb-4">PROGRAM OBJECTIVES</span>
+                <h3 className="text-xl font-bold font-display mb-6">What we aim to achieve</h3>
+                <ul className="space-y-4">
+                  {programObjectives.map((obj) => (
+                    <li key={obj} className="flex items-start gap-3">
+                      <ArrowRight className="text-primary mt-1 shrink-0" size={14} />
+                      <span className="text-muted-foreground">{obj}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <span className="font-mono text-xs text-primary block mb-4">FOR PARTICIPANTS</span>
+                <h3 className="text-xl font-bold font-display mb-6">What you'll gain</h3>
+                <ul className="space-y-4">
+                  {participantBenefits.map((benefit) => (
+                    <li key={benefit} className="flex items-start gap-3">
+                      <ArrowRight className="text-primary mt-1 shrink-0" size={14} />
+                      <span className="text-muted-foreground">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+            </div>
+          </RevealSection>
+        </div>
+      </section>
+
       {/* Dual audience callout */}
-      <section className="py-16">
+      <section className="">
         <div className="container-wide">
           <div className="grid md:grid-cols-2 gap-px bg-primary/10">
             <RevealSection>
-              <div className="bg-card p-10 md:p-14 h-full">
+              <div className="bg-card p-10 h-full">
                 <span className="font-mono text-xs text-primary block mb-4">FOR WOMEN IN TECH</span>
                 <h2 className="text-2xl md:text-3xl font-bold font-display mb-4">You're skilled. Let's get you unstuck.</h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 leading-8">
                   If you've completed training but lack access to real projects, mentorship, or industry connections — our programs are built for you. Gain hands-on experience, build a portfolio of real work, and transition into a professional tech career.
                 </p>
                 <Link
@@ -109,7 +171,7 @@ const Programs = () => {
               <div className="bg-card p-10 md:p-14 h-full">
                 <span className="font-mono text-xs text-primary block mb-4">FOR ORGANIZATIONS & PARTNERS</span>
                 <h2 className="text-2xl md:text-3xl font-bold font-display mb-4">Access motivated, project-ready talent.</h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 leading-8">
                   Join our network to offer jobs, contracts, or project opportunities to women we've trained through real-world, project-based programs. You get capable talent — they get the break they deserve.
                 </p>
                 <Link
@@ -124,108 +186,8 @@ const Programs = () => {
         </div>
       </section>
 
-      {/* Training & Empowerment */}
-      <section className="section-padding">
-        <div className="container-wide">
-          <RevealSection>
-            <span className="font-mono text-xs text-primary block mb-4">TRAINING & EMPOWERMENT</span>
-            <h2 className="text-heading mb-4 max-w-3xl">Building competence through real projects, not classrooms</h2>
-            <p className="text-body text-lg max-w-3xl mb-16">
-              Innovafemme runs training and empowerment initiatives designed to support young women pursuing careers in technology. Our focus is on practical learning and industry exposure — ensuring participants move beyond theoretical knowledge and gain meaningful experience.
-            </p>
-          </RevealSection>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0">
-            {trainingComponents.map((item, i) => (
-              <RevealSection key={item.title} delay={i * 0.06}>
-                <div className={`p-8 h-full ${i > 0 ? "md:border-l border-primary/10" : ""}`}>
-                  <item.icon className="text-primary mb-4" size={28} />
-                  <h3 className="text-lg font-bold font-display mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
-                </div>
-              </RevealSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Skilled But Stuck */}
-      <section className="section-padding bg-card">
-        <div className="container-wide">
-          <RevealSection>
-            <div className="border border-primary/10 p-10 md:p-16 mb-16">
-              <span className="font-mono text-xs text-primary block mb-6">FLAGSHIP PROGRAM</span>
-              <h2 className="text-heading mb-6">The Skilled But Stuck Program</h2>
-              <p className="text-body text-lg max-w-3xl mb-6">
-                Across Africa, many young women successfully complete technical training programs but face significant challenges entering the workforce. Despite possessing foundational skills, they often lack access to the real-world experience required by employers.
-              </p>
-              <p className="text-body text-lg max-w-3xl">
-                The Skilled But Stuck Program is designed to address this challenge by creating a bridge between technical training and real industry experience. Through this program, Innovafemme connects skilled young women with real technology projects, allowing them to apply their knowledge, gain confidence, and build portfolios that demonstrate their capabilities.
-              </p>
-            </div>
-          </RevealSection>
-
-          {/* What participants gain */}
-          <RevealSection>
-            <div className="grid md:grid-cols-2 gap-16 mb-16">
-              <div>
-                <span className="font-mono text-xs text-primary block mb-4">FOR PARTICIPANTS</span>
-                <h3 className="text-xl font-bold font-display mb-6">What you'll gain</h3>
-                <ul className="space-y-4">
-                  {participantBenefits.map((benefit) => (
-                    <li key={benefit} className="flex items-start gap-3">
-                      <ArrowRight className="text-primary mt-1 shrink-0" size={14} />
-                      <span className="text-muted-foreground">{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <span className="font-mono text-xs text-primary block mb-4">PROGRAM OBJECTIVES</span>
-                <h3 className="text-xl font-bold font-display mb-6">What we aim to achieve</h3>
-                <ul className="space-y-4">
-                  {programObjectives.map((obj) => (
-                    <li key={obj} className="flex items-start gap-3">
-                      <ArrowRight className="text-primary mt-1 shrink-0" size={14} />
-                      <span className="text-muted-foreground">{obj}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </RevealSection>
-        </div>
-      </section>
-
-      {/* Expected Impact */}
-      <section className="section-padding">
-        <div className="container-wide">
-          <RevealSection>
-            <span className="font-mono text-xs text-primary block mb-4">EXPECTED IMPACT</span>
-            <h2 className="text-heading mb-6 max-w-3xl">
-              Turning technical knowledge into{" "}
-              <span className="text-primary">meaningful careers</span>
-            </h2>
-            <p className="text-body text-lg max-w-3xl mb-12">
-              By equipping participants with practical experience and industry exposure, Innovafemme helps transform technical knowledge into meaningful career opportunities.
-            </p>
-          </RevealSection>
-
-          <div className="grid md:grid-cols-2 gap-px bg-primary/10 mb-24">
-            {impactGoals.map((goal, i) => (
-              <RevealSection key={goal} delay={i * 0.06}>
-                <div className="bg-background p-8 md:p-10 h-full">
-                  <span className="font-mono text-xs text-primary block mb-3">0{i + 1}</span>
-                  <p className="text-foreground font-medium">{goal}</p>
-                </div>
-              </RevealSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Partnership Opportunities */}
-      <section className="section-padding bg-card">
+      <section className="section-padding-sm bg-card">
         <div className="container-wide">
           <RevealSection>
             <span className="font-mono text-xs text-primary block mb-4">PARTNERSHIP OPPORTUNITIES</span>
@@ -238,7 +200,7 @@ const Programs = () => {
             </p>
           </RevealSection>
 
-          <div className="grid md:grid-cols-2 gap-16 mb-16">
+          <div className="grid md:grid-cols-2 gap-16 mb-10">
             <RevealSection>
               <div>
                 <h3 className="text-lg font-bold font-display mb-6">Who can partner with us</h3>
@@ -270,7 +232,7 @@ const Programs = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="section-padding">
+      <section className="section-padding-sm">
         <div className="container-wide">
           <RevealSection>
             <div className="text-center py-16">

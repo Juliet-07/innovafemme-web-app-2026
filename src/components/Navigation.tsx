@@ -24,7 +24,7 @@ const Navigation = () => {
           <img 
             src="/logo.png" 
             alt="Innovafemme Tech Solutions" 
-            className="h-12 w-auto object-contain"
+            className="h-20 w-auto object-contain py-3"
           />
         </Link>
 

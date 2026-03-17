@@ -31,7 +31,7 @@ const Contact = () => {
                 </h1>
                 <p className="text-body text-lg mb-12">
                   Whether you have a project in mind, want to explore a partnership,
-                  or are interested in joining our community — we'd love to hear from you.
+                  or are interested in joining our community, we would love to hear from you.
                 </p>
               </RevealSection>
 
@@ -39,13 +39,13 @@ const Contact = () => {
                 <div className="space-y-8">
                   <div className="gold-border-left">
                     <p className="text-overline mb-1">Email</p>
-                    <a href="mailto:hello@innovafemme.com" className="text-foreground hover:text-primary transition-colors">
-                      hello@innovafemme.com
+                    <a href="mailto:innovafemmetechsolutions@gmail.com" className="text-foreground hover:text-primary transition-colors">
+                      innovafemmetechsolutions@gmail.com
                     </a>
                   </div>
                   <div className="gold-border-left">
                     <p className="text-overline mb-1">LinkedIn</p>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+                    <a href="https://www.linkedin.com/company/innovafemme-tech-solutions" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                       Innovafemme Tech Solutions
                     </a>
                   </div>

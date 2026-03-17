@@ -70,7 +70,7 @@
   }
 
   .section-padding-sm {
-    @apply py-16 md:py-24;
+    @apply py-5 md:py-10;
   }
 
   .container-wide {

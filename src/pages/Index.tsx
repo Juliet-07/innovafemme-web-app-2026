@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Code2, Smartphone, GraduationCap, Landmark, Heart, BookOpen, Building2, Truck, ShoppingCart, Wheat, Hotel } from "lucide-react";
+import { ArrowRight, Code2, GraduationCap, Landmark, Heart, BookOpen, Building2, Truck, ShoppingCart, Wheat, Hotel, BrainCircuitIcon, Wrench, Network, MousePointerClick, Megaphone, ScanSearch } from "lucide-react";
 import Layout from "@/components/Layout";
 import RevealSection from "@/components/RevealSection";
 
@@ -39,19 +39,34 @@ const projects = [
 
 const services = [
   {
-    icon: Code2,
-    title: "Software Development",
-    description: "Custom web and mobile platforms designed for scale and performance.",
+    icon: BrainCircuitIcon,
+    title: "Technology Consulting",
+    description: "We provide advisory services to organizations seeking to adopt or improve their use of technology.",
   },
   {
-    icon: Smartphone,
-    title: "Digital Product Development",
-    description: "From concept to deployment — scalable digital products that solve real problems.",
+    icon: Code2,
+    title: "Software Development",
+    description: "We design and build custom software solutions (web and mobile platforms) that help businesses automate processes, deliver digital services and reach customers more effectively.",
+  },
+  {
+    icon: Wrench,
+    title: "Software Maintenance & System Support",
+    description: "Technology systems require continuous monitoring and updates to remain secure, efficient and reliable. We provide ongoing maintenance and technical support services to ensure that your digital platforms continue to perform effectively.",
+  },
+  {
+    icon: Network,
+    title: "IoT Solutions",
+    description: "We develop and integrate IoT solutions that conncet devices, systems and data to improve operational efficinecy and enable smarter decision-making.",
+  },
+  {
+    icon: ScanSearch,
+    title: "Digital Marketing & SEO",
+    description: "We provide digital marketing and search engine optimization (SEO) services to help businesses improve their online visibility, attract the right audience, and drive measurable growth.",
   },
   {
     icon: GraduationCap,
     title: "Technology Training & Mentorship",
-    description: "Real project opportunities for emerging tech talent, especially women in technology.",
+    description: "We run training and empowerment initiatives designed to support young women who are interested in pursuing careers in technology.",
   },
 ];
 
@@ -67,7 +82,7 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="section-padding relative overflow-hidden">
+      <section className="relative overflow-hidden">
         <div className="container-wide">
           <div className="grid lg:grid-cols-5 gap-12 items-center min-h-[70vh]">
             <div className="lg:col-span-3">
@@ -156,7 +171,7 @@ const Index = () => {
         <div className="container-wide">
           <RevealSection>
             <p className="text-overline mb-4">What We Do</p>
-            <h2 className="text-heading mb-16 max-w-2xl">
+            <h2 className="text-heading mb-10 max-w-2xl">
               Technology solutions that drive{" "}
               <span className="text-primary">real impact</span>
             </h2>
@@ -188,7 +203,7 @@ const Index = () => {
         <div className="container-wide">
           <RevealSection>
             <p className="text-overline mb-4">Industries We Serve</p>
-            <h2 className="text-heading mb-16 max-w-2xl">
+            <h2 className="text-heading mb-10 max-w-2xl">
               Cross-sector expertise for <span className="text-primary">diverse markets</span>
             </h2>
           </RevealSection>
@@ -216,11 +231,11 @@ const Index = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="section-padding bg-card">
+      <section className="section-padding-sm bg-card">
         <div className="container-wide">
           <RevealSection>
             <p className="text-overline mb-4">Featured Products</p>
-            <h2 className="text-heading mb-16">
+            <h2 className="text-heading mb-10">
               Products we've <span className="text-primary">built</span>
             </h2>
           </RevealSection>
@@ -252,7 +267,7 @@ const Index = () => {
       <section className="section-padding-sm">
         <div className="container-wide">
           <RevealSection>
-            <div className="flex items-end justify-between mb-16">
+            <div className="flex items-end justify-between mb-10">
               <div>
                 <p className="text-overline mb-4">Our Work</p>
                 <h2 className="text-heading">
@@ -302,7 +317,7 @@ const Index = () => {
       </section>
 
       {/* Impact */}
-      <section className="section-padding bg-card">
+      <section className="section-padding-sm bg-card">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <RevealSection>
