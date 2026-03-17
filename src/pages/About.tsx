@@ -68,7 +68,7 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ staggerChildren: 0.08 }}
-            className="grid md:grid-cols-5 gap-0"
+            className="grid md:grid-cols-3 gap-0"
           >
             {values.map((value, i) => (
               <motion.div
