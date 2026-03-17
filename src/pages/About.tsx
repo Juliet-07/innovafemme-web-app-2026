@@ -3,11 +3,12 @@ import RevealSection from "@/components/RevealSection";
 import { motion } from "framer-motion";
 
 const values = [
-  { name: "Innovation", description: "Pushing boundaries with every solution we build." },
-  { name: "Excellence", description: "Uncompromising quality in every line of code." },
-  { name: "Collaboration", description: "Building together with clients, partners, and communities." },
-  { name: "Integrity", description: "Transparency and honesty in all we do." },
-  { name: "Empowerment", description: "Creating pathways for underrepresented talent in tech." },
+  { name: "Innovation", description: "We continuously explore new ideas and technologies to create forward-thinking solutions that help businesses stay competitive in an evolving digital landscape." },
+  { name: "Excellence", description: "We are committed to delivering high-quality products and services by maintaining strong engineering standards, attention to detail, and a culture of continuous improvement." },
+  { name: "Empowerment", description: "We believe technology should create opportunities. Through our work and initiatives, we aim to empower businesses and individuals to reach their full potential." },
+  { name: "Collaboration", description: "We believe the best solutions are built through teamwork and strong partnerships. We work closely with clients, partners, and collaborators to achieve shared goals." },
+  { name: "Integrity", description: "We operate with transparency, accountability, and professionalism in all our engagements, ensuring trust and reliability in the relationships we build." },
+  { name: "Inclusion", description: "We are committed to promoting diversity and creating opportunities for women and underrepresented groups to grow and succeed in the technology industry." },
 ];
 
 const About = () => {
@@ -34,9 +35,11 @@ const About = () => {
             <RevealSection>
               <div className="bg-background p-10 md:p-16">
                 <p className="text-overline mb-4">Our Mission</p>
-                <p className="text-xl font-display font-bold leading-snug">
-                  To build impactful technology solutions while creating opportunities
-                  for skilled women in technology to grow through real-world experience.
+                <p className="text-xl font-display font-bold leading-snug mb-4">
+                  Innovafemme Tech Solutions exists to design and deliver practical, scalable technology solutions that help businesses operate more efficiently and adapt to the digital economy.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Through software development, technology consulting, and product innovation, we work with organizations to transform ideas into impactful digital tools that solve real-world problems. In addition to building technology solutions, Innovafemme is committed to fostering the growth of future technology leaders by creating opportunities for young women to gain practical exposure, mentorship, and experience within the technology ecosystem.
                 </p>
               </div>
             </RevealSection>
@@ -44,8 +47,7 @@ const About = () => {
               <div className="bg-background p-10 md:p-16">
                 <p className="text-overline mb-4">Our Vision</p>
                 <p className="text-xl font-display font-bold leading-snug">
-                  To become a leading technology solutions provider in Africa while
-                  fostering a new generation of innovative technology professionals.
+                  To become a leading technology solutions company that empowers businesses with innovative digital products while creating meaningful opportunities for women to grow and thrive in the technology industry.
                 </p>
               </div>
             </RevealSection>
@@ -54,6 +56,9 @@ const About = () => {
           {/* Values */}
           <RevealSection>
             <p className="text-overline mb-4">Core Values</p>
+            <p className="text-lg text-muted-foreground max-w-2xl mb-4">
+              The values of Innovafemme guide how we build products, work with clients, and contribute to the technology community.
+            </p>
             <h2 className="text-heading mb-16">
               What drives <span className="text-primary">everything</span> we do
             </h2>
@@ -63,7 +68,7 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ staggerChildren: 0.08 }}
-            className="grid md:grid-cols-5 gap-0"
+            className="grid md:grid-cols-3 gap-0"
           >
             {values.map((value, i) => (
               <motion.div
