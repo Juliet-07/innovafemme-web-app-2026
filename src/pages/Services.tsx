@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import RevealSection from "@/components/RevealSection";
-import { Code2, Smartphone, Cloud, Brain } from "lucide-react";
+import { Code2, Smartphone, Cloud, Brain, Cpu, ShieldCheck } from "lucide-react";
 
 const services = [
   {
@@ -26,6 +26,18 @@ const services = [
     title: "AI & Data Solutions",
     description: "Intelligent analytics platforms and AI-powered systems that transform data into actionable insights.",
     features: ["Data Analytics", "Machine Learning", "Predictive Systems", "Intelligent Automation"],
+  },
+  {
+    icon: Cpu,
+    title: "IoT Solutions",
+    description: "We design and develop Internet of Things systems that connect devices, collect data, and enable smart automation for businesses.",
+    features: ["Sensor Integration", "Real-Time Monitoring", "Edge Computing", "Smart Automation"],
+  },
+  {
+    icon: ShieldCheck,
+    title: "Cybersecurity",
+    description: "We help organizations protect their digital assets through proactive security strategies, assessments, and resilient system architectures.",
+    features: ["Security Audits", "Penetration Testing", "Threat Monitoring", "Compliance & Governance"],
   },
 ];
 
