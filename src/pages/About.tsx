@@ -35,9 +35,11 @@ const About = () => {
             <RevealSection>
               <div className="bg-background p-10 md:p-16">
                 <p className="text-overline mb-4">Our Mission</p>
-                <p className="text-xl font-display font-bold leading-snug">
-                  To build impactful technology solutions while creating opportunities
-                  for skilled women in technology to grow through real-world experience.
+                <p className="text-xl font-display font-bold leading-snug mb-4">
+                  Innovafemme Tech Solutions exists to design and deliver practical, scalable technology solutions that help businesses operate more efficiently and adapt to the digital economy.
+                </p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Through software development, technology consulting, and product innovation, we work with organizations to transform ideas into impactful digital tools that solve real-world problems. In addition to building technology solutions, Innovafemme is committed to fostering the growth of future technology leaders by creating opportunities for young women to gain practical exposure, mentorship, and experience within the technology ecosystem.
                 </p>
               </div>
             </RevealSection>
@@ -45,8 +47,7 @@ const About = () => {
               <div className="bg-background p-10 md:p-16">
                 <p className="text-overline mb-4">Our Vision</p>
                 <p className="text-xl font-display font-bold leading-snug">
-                  To become a leading technology solutions provider in Africa while
-                  fostering a new generation of innovative technology professionals.
+                  To become a leading technology solutions company that empowers businesses with innovative digital products while creating meaningful opportunities for women to grow and thrive in the technology industry.
                 </p>
               </div>
             </RevealSection>
